@@ -1,0 +1,9 @@
+{
+  "ShaderHighLight": { "branch": "master", "commit": "e97a6cb32cf608256d2e3541aa031283ecca06ca" },
+  "ale": { "branch": "master", "commit": "80ff84db84ba172bfcdee5e2748924bb2249134b" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "squirrel.vim": { "branch": "master", "commit": "8363c4aaf395d9bb00381e7988b53fe7f0ae6161" },
+  "transparent.nvim": { "branch": "main", "commit": "d41ae9b56ac2706cb3db4b16afe5cd6903013937" },
+  "vim-airline": { "branch": "master", "commit": "41c5f54507fd865c8c00fe1f4bb390a59b6894ef" },
+  "vim-gruvbox8": { "branch": "neovim", "commit": "6777e1d55490d226168f262bcd8779623dbbd313" }
+}

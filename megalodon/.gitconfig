@@ -1,0 +1,11 @@
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[core]
+	editor = nvim
+# NOTE: email & name are set here
+# -- removed for privacy
+# [user]
+#     email = ...
+#     name = ...

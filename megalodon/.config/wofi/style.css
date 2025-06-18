@@ -1,0 +1,28 @@
+#window {
+    font-size: 20px;
+    font-family: "Source Han Sans";
+    background-color: rgba(47, 40, 50, 0.9);
+    color: #EEE;
+}
+
+#input {
+    background-color: rgba(47, 40, 50, 0.9);
+    color: #EEE;
+    border: none;
+}
+
+
+#entry:selected {
+    background-color: #AAF;
+    background: linear-gradient(90deg, #AAF, #FAA);
+}
+
+#text:selected {
+    color: #415;
+}
+
+
+image {
+    margin-left: 4px;
+    margin-right: 4px;
+}
