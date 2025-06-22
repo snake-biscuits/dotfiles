@@ -1,4 +1,4 @@
-## Niri not showing up in Display Manager
+## Niri in Display Manager
 
 `lightdm` wasn't listing `niri` as an option
 
@@ -19,3 +19,7 @@ Would be neat to have a virtual keyboard underneath wezterm in the same column
 [Wiki Reference](https://github.com/YaLTeR/niri/wiki/Example-systemd-Setup)
 
 > Unlike `spawn-at-startup`, `systemd` lets you easily monitor their status and output, and restart or reload them.
+
+
+## Backspace sends firefox back a page
+setting `browser.backspace_action` to `1` in `about:config` fixed it
