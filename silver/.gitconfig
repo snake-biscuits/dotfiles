@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[core]
+	editor = nvim
+[user]
+    email = 36507175+snake-biscuits@users.noreply.github.com
+    name = snake-biscuits

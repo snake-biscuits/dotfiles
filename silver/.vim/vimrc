@@ -1,0 +1,5 @@
+set nocompatible
+set backspace=indent,eol,start
+
+set number ruler
+set autoindent expandtab shiftwidth=4 smarttab softtabstop=0 tabstop=4
