@@ -21,6 +21,13 @@
  * djv (AUR)
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
+ * lightdm
+   - lightdm-slick-greeter
+ * niri
+   - fuzzel
+   - mako
+   - xdg-desktop-portal-gnome (for screencasting; will wlr work?)
+   - xwayland-sattelite
 
 ### Video Production
  * tenacity (audacity fork)
@@ -36,9 +43,10 @@
 
 
 ## Desktop Environment
- * sway (compositor)
- * waybar
- * wofi (launcher)
+ * sway
+   - autotiling
+   - waybar
+   - wofi
 
 
 ## Editors
