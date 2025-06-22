@@ -1,5 +1,5 @@
 ## TODOs
- - [ ] **CPU OVERHEATING**
+ - [ ] **OVERHEATING / CRASHES**
        case is know to have poor airflow, more fans?
        is cpu fan good?
        is there a software solution?
@@ -12,48 +12,51 @@
    - [ ] could be main NVMe
      - [ ] put gpu on a riser
  - [x] dotfiles repo
-   - [ ] summaries & links to guides followed (sources.md)
    - [x] list of installed software and why (software.md)
+   - [ ] summaries & links to guides followed (sources.md)
  - [x] get ownership of harddrives as user, not root
        `$ sudo chown -R bikkie /home/bikkie/drives/`
- - [ ] Zenless Zone Zero graphical glitches & crashes
-       `DXVK_CONFIG` environment variable might've fixed crashes
-       ~~still get fullscreen polygons sometimes, idk why~~
-       installing `amdvlk` seems to have helped (vulkan drivers)
-       still getting CPU crashes (probably from overheating)
- - [x] ethernet
-       cable wasn't plugged all the way in
  - [x] move files over from old PC
-       set up openssh; use `scp`
+       `scp` via OpenSSH
  - [ ] move over Anki flashcards
        haven't done them in a while
  - [x] need `GDK_DISABLE=vulkan` to run Gtk4 apps
        added `export GDK_DISABLE=vulkan` to `~/.bash_profile`
- - [ ] sway config
-   - [ ] trackpad gestures
-   - [ ] bind media keys (Volume +/-)
- - [x] waybar config
+ - [ ] `sway`
+   - [ ] split into multiple files & include them
+     - [ ] `hardware` (output & input)
+     - [ ] `keybinds`
+     - [ ] `theme`
+   - [ ] Corsair K83
+     - [x] volume scrollwheel
+     - [ ] scroll with joystick
+     - [ ] two-finger scrolling
+     - [ ] bind rear buttons
+   - [x] bind media keys (via `playerctl`)
+ - [ ] `playerctl`
+   - [ ] prioritise `mpd` if other players are paused
+ - [x] `waybar`
    - [x] power menu
  - [x] notepadqq crashing within seconds
    - [x] installed `qt5-wayland`
    - [x] installed `mathjax2`
    - [x] disabled "Settings > Preferences > General > Backup Open Documents"
          from [GitHub Issue #1108](https://github.com/notepadqq/notepadqq/issues/1108)
- - [ ] open archives in nautilus with p7zip-gui rather than extracting
- - [ ] nvim
+ - [ ] file browser (`nautilus`)
+   - [ ] open archives w/ `p7zip-gui`
+         currently extracts instead
+   - [ ] try `dolphin`
+ - [ ] `nvim`
    - [ ] not yanking to clipboard (`"*y`) like Ctrl+Shift+C in terminal
      wl-copy & wl-paste (wl-clipboard) aren't being detected?
      `"+y` works fine, ":help quotestar" explains the difference
      `"+p` can paste! didn't know that!
    - [x] set shiftwidth etc. to 2 spaces for html (ftplugin)
- - [ ] a clipboard history tool like I have on Ubuntu? would be **nice-to-have**
- - [ ] ~~Foobar2000~~
-   - [ ] Eole theme javascript winapi is crashing
-         need more 32-bit wine packages?
- - [x] mpd
-   - [x] rmpc
-   - [ ] media keys
-   - [ ] playerctl
+ - [ ] clipboard history tool
+       would be **nice-to-have**
+ - [x] `mpd`
+   - [x] `rmpc`
+   - [x] `playerctl` interface via `mpd-mpris`
    - [ ] upnp
    - [ ] metadata
      - [ ] 1 folder per disc
@@ -62,6 +65,16 @@
        - [ ] find songs with no cover art
    - [ ] disc ripping
    - [ ] `.wav` -> `.mp3` w/ metadata
+ - [ ] Display Manager
+   - [ ] `gdm`
+     apparently works well with sway
+     configuration looks like a pretty rough experience
+   - [ ] configs
+     - [ ] `sway.desktop`
+     - [ ] `niri.desktop`
+     - [ ] `kodi.desktop`
+           [Wiki](https://wiki.debian.org/Kodi#Starting_Kodi_using_a_display_manager)
+ - [ ] `niri`
 
 
 ### Configs (dotfiles)

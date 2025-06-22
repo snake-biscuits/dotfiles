@@ -92,10 +92,11 @@
 
 
 ## Music
- * mpc
  * mpd
+   - mpc
+   - mpd-mpris (control mpd w/ playerctl)
+   - rmpc
  * mplayer
- * rmpc
 
 ### Visualiser
  * projectm-pulseaudio
