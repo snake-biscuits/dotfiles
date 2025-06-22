@@ -8,21 +8,11 @@
    - F3D Docs: [Desktop Integration](https://f3d.app/doc/user/DESKTOP_INTEGRATION.html)
  * kimageformats [`*.heic` thumbnails]
    - [Arch Wiki](https://wiki.archlinux.org/title/Dolphin#File_previews)
- * lib32 dependencies for wine [WINEARCH=win32]
-   - lib32-libcups
-   - lib32-gst-plugins-base
-   - lib32-gst-plugins-base-libs
-   - lib32-gst-plugins-good
-   - lib32-libxcomposite
-   - lib32-libxinerama
-   - lib32-opencl-icd-loader
-   - lib32-pcsclite
-   - lib32-v4l-utils
  * djv (AUR)
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
- * lightdm
-   - lightdm-slick-greeter
+ * ~~lightdm~~ (doesn't work well with sway; gdm is recommended)
+ * gdm
  * niri
    - fuzzel
    - mako
