@@ -9,17 +9,20 @@
    - [ ] use `notify-send` to warn when CPU temp is high (75C+)
          might need `chrontab` to dispatch a script to check temp?
    - [x] try moving to top of rack for better airflow
- - [ ] dotfiles repo
- - [ ] summaries & links to guides followed (sources.md)
- - [ ] list of installed software and why (software.md)
+   - [ ] could be main NVMe
+     - [ ] put gpu on a riser
+ - [x] dotfiles repo
+   - [ ] summaries & links to guides followed (sources.md)
+   - [x] list of installed software and why (software.md)
  - [x] get ownership of harddrives as user, not root
        `$ sudo chown -R bikkie /home/bikkie/drives/`
  - [ ] Zenless Zone Zero graphical glitches & crashes
        `DXVK_CONFIG` environment variable might've fixed crashes
        ~~still get fullscreen polygons sometimes, idk why~~
        installing `amdvlk` seems to have helped (vulkan drivers)
-       still getting CPU crashes
- - [x] ethernet (cable wasn't plugged all the way in)
+       still getting CPU crashes (probably from overheating)
+ - [x] ethernet
+       cable wasn't plugged all the way in
  - [x] move files over from old PC
        set up openssh; use `scp`
  - [ ] move over Anki flashcards
@@ -52,6 +55,13 @@
    - [ ] media keys
    - [ ] playerctl
    - [ ] upnp
+   - [ ] metadata
+     - [ ] 1 folder per disc
+     - [ ] album art (covers, discs, booklets)
+       - [ ] separate images in `.zip` w/ `.mp3`s
+       - [ ] find songs with no cover art
+   - [ ] disc ripping
+   - [ ] `.wav` -> `.mp3` w/ metadata
 
 
 ### Configs (dotfiles)
