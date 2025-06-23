@@ -15,4 +15,17 @@
 
 ## Random screen dimming
 why is it happening? seems like idle but it doesn't undo itself
-only in Cinnamon?
+only in Cinnamon-wayland?
+
+
+## Wezterm window scales incorrectly
+Fullscreen / maximise / snap to screen side doesn't move window
+Appears to be a wayland issue:
+```lua
+config.enable_wayland = False
+```
+solution found in [wezterm issue](https://github.com/wezterm/wezterm/issues/6203)
+
+
+## Scrolling firefox with touchscreen
+Works in `wayland` but not `X`
