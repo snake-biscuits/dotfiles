@@ -15,9 +15,7 @@
  * gdm
  * niri
    - fuzzel
-   - mako
    - xdg-desktop-portal-gnome (for screencasting; will wlr work?)
-   - xwayland-sattelite
 
 ### Video Production
  * tenacity (audacity fork)
@@ -34,9 +32,10 @@
 
 ## Desktop Environment
  * sway
-   - autotiling
+   - mako
    - waybar
    - wofi
+   - xwayland-sattelite
 
 
 ## Editors
@@ -94,9 +93,11 @@
 ## Music
  * mpd
    - mpc
+   - mpd-discord-rpc (AUR)
    - mpd-mpris (control mpd w/ playerctl)
    - rmpc
  * mplayer
+ * rhythmbox (podcasts)
 
 ### Visualiser
  * projectm-pulseaudio
