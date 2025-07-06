@@ -5,6 +5,7 @@
    - [ ] KDL syntax: [kdl.vim](https://github.com/imsnif/kdl.vim)
  - [x] wezterm [instructions to add apt on site]
  - [x] bat (TODO: alias batcat to bat)
+ - [x] [glow](https://github.com/charmbracelet/glow)
 
 
 ## Niri
@@ -18,4 +19,4 @@
 
 
 ## Utils
- - [ ] tree
+ - [x] tree
