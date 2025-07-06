@@ -9,7 +9,7 @@
 
 ## Niri
 [Wiki Reference](https://github.com/YaLTeR/niri/wiki/Important-Software)
- - [ ] mako-notifier
+ - [x] mako-notifier
  - [x] niri [build from source with cargo]
  - [ ] swaybg
  - [ ] swayidle
