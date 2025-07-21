@@ -83,6 +83,7 @@
 ## Misc
  * anki
  * blender
+ * fd
  * font-manager
  * jq
  * radare2
