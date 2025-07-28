@@ -20,13 +20,18 @@
 
 
 ## Niri
-[Wiki Reference](https://github.com/YaLTeR/niri/wiki/Important-Software)
  - [x] mako-notifier
  - [x] niri [build from source with cargo]
- - [ ] swaybg
- - [ ] swayidle
- - [ ] waybar
+ - [x] swaybg
+ - [x] swayidle
+ - [x] swaylock
+ - [x] waybar
+   - [x] fonts-font-awesome
  - [ ] xwayland-sattelite [build from source with cargo]
+
+### Wiki
+ * [software list](https://github.com/YaLTeR/niri/wiki/Important-Software)
+ * [systemd setup](https://github.com/YaLTeR/niri/wiki/Example-systemd-Setup)
 
 
 ## Utils

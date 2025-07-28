@@ -17,4 +17,7 @@ config.keys = {
       action = wezterm.action.CloseCurrentTab { confirm = true }, },
 }
 
+-- TODO: disable on cinnamon, enable on niri
+config.enable_wayland = true
+
 return config
