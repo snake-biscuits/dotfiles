@@ -66,6 +66,11 @@
  * vifm (curses-based)
 
 
+## Fonts
+ * otf-font-awesome
+ * ttf-nerd-fonts-symbols
+
+
 ## Games
 ### Minecraft
  * prismlauncher
