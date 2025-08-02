@@ -12,4 +12,5 @@
  * worklog
 
 ## Utilities
+ * bat
  * endlines (GitHub)
