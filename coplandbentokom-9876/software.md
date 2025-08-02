@@ -14,3 +14,4 @@
 ## Utilities
  * bat
  * endlines (GitHub)
+ * glow
