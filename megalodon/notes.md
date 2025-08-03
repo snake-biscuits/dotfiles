@@ -221,6 +221,21 @@ $ mpc play
 
 > TODO: upnp plugin
 
+```sh
+$ mpc playlist --format=%time% | python -c "
+import sys
+total_seconds = 0
+for line in sys.stdin:
+    if ':' in line:
+        minutes, seconds = map(int, line.split(':'))
+        total_seconds += minutes * 60
+        total_seconds += seconds
+hours = total_seconds // 3600
+minutes = (total_seconds // 60) % 60
+seconds = total_seconds % 60
+print(f'{hours}:{minutes}:{seconds}')"
+```
+
 
 ## ISO Image Burning
 `balena-etcher` doesn't like wayland
