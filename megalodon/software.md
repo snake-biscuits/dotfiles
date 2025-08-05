@@ -16,6 +16,9 @@
  * niri
    - fuzzel
    - xdg-desktop-portal-gnome (for screencasting; will wlr work?)
+ * nvim plugins (need to find)
+   - markdown inline rendering
+   - markdown navigation (jump to header)
 
 ### Video Production
  * tenacity (audacity fork)
