@@ -6,7 +6,7 @@
 $ sudo mv /usr/{local/,}share/wayland-sessions/niri.desktop
 ```
 
-should probably add an icon
+should probably add an icon, but how?
 
 
 ## Onscreen keyboard
@@ -23,3 +23,9 @@ Would be neat to have a virtual keyboard underneath wezterm in the same column
 
 ## Backspace sends firefox back a page
 setting `browser.backspace_action` to `1` in `about:config` fixed it
+
+
+## Screen Locking
+could use `lightdm` instead of `swaylock` for `niri`
+keeps consistency w/ `cinnamon`
+or look at configuring `swaylock`
