@@ -1,2 +1,5 @@
 set number ruler
 set autoindent expandtab shiftwidth=4 smarttab softtabstop=0 tabstop=4
+set nocompatible
+filetype plugin on
+syntax on
