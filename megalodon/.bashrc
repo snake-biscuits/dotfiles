@@ -57,6 +57,9 @@ xterm*|rxvt*)
 	;;
 esac
 
+# add user scripts to PATH
+PATH="${PATH}:/home/bikkie/.scripts"
+
 
 # Aliases
 # ls

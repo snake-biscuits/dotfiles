@@ -1,0 +1,103 @@
+#!/usr/bin/env bash
+
+rank() {
+    diff=$(git diff --shortstat)
+    files=$(git status -s -uno)
+    stash=$(git stash list)
+    # Gold > Blue > Green > Purple > Red > Dark Gray
+    if [ -z "$diff" ] && [ -z "$files" ] && [ -z "$stash" ]; then
+        branch=$(git status -sb | head -n 1)
+        if [[ "$branch" == "## "*...*"/"*" [behind "*"]" ]] ; then
+            echo "\e[1;35mC\e[0m"  # behind (purple)
+        elif [[ "$branch" == "## "*...*"/"*" [ahead "*"]" ]] ; then
+            echo "\e[1;34mA\e[0m"  # ahead (blue)
+        else
+            echo "\e[1;33mS\e[0m"  # up to date (gold)
+        fi
+    elif [ "$stash" ] ; then
+        echo "\e[1;37m~\e[0m"  # stashed (white)
+    elif [ -z "$diff" ] && [ "$files" ] ; then
+        echo "\e[1;32mB\e[0m"  # staged (green)
+    elif [ "$diff" ] ; then
+        echo "\e[1;31mD\e[0m"  # unstaged (red)
+    else
+        echo "\e[1;30m?\e[0m"  # unknown (dark gray)
+    fi
+}
+
+ago() {
+    echo $(date -d "$1 ago" +"%s")
+}
+
+age() {
+    # Gold > Navy > Cyan > Green > Yellow > Red > Bold Red
+    last_commit=$(git log -1 --pretty=format:%ad --date=format:"%s")
+    if   [ $last_commit -ge $(ago "1 day"   ) ]; then echo "\e[1;37m";
+    elif [ $last_commit -ge $(ago "1 week"  ) ]; then echo "\e[34m";
+    elif [ $last_commit -ge $(ago "2 weeks" ) ]; then echo "\e[1;34m";
+    elif [ $last_commit -ge $(ago "6 weeks" ) ]; then echo "\e[32m";
+    elif [ $last_commit -ge $(ago "6 months") ]; then echo "\e[33m";
+    elif [ $last_commit -ge $(ago "1 year"  ) ]; then echo "\e[31m";
+    else                                              echo "\e[1;31m";
+    fi
+}
+
+repos() {
+    find $1 -maxdepth 1 -type d -exec test -e "{}/.git" ';' -print |
+    while read -r repo; do echo $repo; done
+}
+
+soper() {  # non-repos
+    find $1 -maxdepth 1 -mindepth 1 -type d -exec test ! -e "{}/.git" ';' -print |
+    while read -r repo; do echo $repo; done
+}
+
+fetch() {  # fetch all repos
+    repos $1 | while read -r repo; do
+        cd $repo
+        echo -e "fetching $(age)$(basename $repo)\e[0m..."
+        git fetch
+        cd $1
+    done
+}
+
+quick() {  # coloured & ranked folders
+    repos $1 | while read -r repo; do
+        cd $repo
+        echo -e "$(rank) $(age)$(basename $repo)\e[0m"
+        cd $1
+    done
+    soper $1 | while read -r folder; do
+        echo -e "\e[1;30mX $(basename $folder)\e[0m"
+    done
+}
+
+dirty() {  # details if working tree isn't clean
+    repos $1 | while read -r repo; do
+        cd $repo
+        diff=$(git diff --shortstat)
+        files=$(git status -s -uno)
+        if [ "$diff" ]; then
+            echo -e "== $(age)$(basename $repo)\e[0m =="
+            echo -e "\e[1;37m$diff\e[0m"
+            if [ "$files" ]; then echo "$files"; fi
+            echo ""
+        fi
+        cd $1
+    done
+}
+
+usage() {
+    script=$(basename "$0")
+    echo "$script [dirty|fetch|quick]"
+    echo "    dirty  show unclean working trees"
+    echo "    fetch  fetch all repos"
+    echo "    quick  print repos w/ rank and age colour"
+}
+
+if [ -z "$1" ]; then quick $PWD | column -S 1;
+elif [ "$1" = "dirty" ]; then dirty $PWD;
+elif [ "$1" = "fetch" ]; then fetch $PWD;
+elif [ "$1" = "quick" ]; then quick $PWD;
+else usage;
+fi
