@@ -11,8 +11,10 @@ rank() {
             echo "\e[1;35mC\e[0m"  # behind (purple)
         elif [[ "$branch" == "## "*...*"/"*" [ahead "*"]" ]] ; then
             echo "\e[1;34mA\e[0m"  # ahead (blue)
-        else
+        elif [[ "$branch" == "## "*...*"/"* ]] ; then
             echo "\e[1;33mS\e[0m"  # up to date (gold)
+        else
+            echo "\e[1;36m-\e[0m"  # no remote / detached HEAD (cyan)
         fi
     elif [ "$stash" ] ; then
         echo "\e[1;37m~\e[0m"  # stashed (white)
@@ -72,7 +74,7 @@ quick() {  # coloured & ranked folders
     done
 }
 
-dirty() {  # details if working tree isn't clean
+dirty() {  # quick stats of unstaged changes
     repos $1 | while read -r repo; do
         cd $repo
         diff=$(git diff --shortstat)
