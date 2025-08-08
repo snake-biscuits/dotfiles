@@ -90,6 +90,7 @@ alias xxd='xxd -R always'
 
 
 # Exports
-export TERM=xterm-256color
-export EDITOR=/usr/bin/nvim
-export SUDO_EDITOR=nvim
+export TERM="xterm-256color"
+export EDITOR="/usr/bin/nvim"
+export SUDO_EDITOR="nvim"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"

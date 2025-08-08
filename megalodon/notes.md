@@ -243,3 +243,18 @@ needs a GUI `polkit` of some kind
 
 `justdd` works great
 make sure to run it from terminal otherwise it tries to open `polkit` in `/dev/tty` & fails
+
+
+## `ssh-agent`
+```
+$ systemctl --user enable ssh-agent.socket
+```
+`~/.bashrc`
+```sh
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+```
+`~/.ssh/config`
+```
+Host github.com
+    AddKeysToAgent yes
+```
