@@ -51,6 +51,8 @@
    - vim-gruvbox8
  * notepadqq
  * sc-im (AUR)
+ * vim
+   - [vimwiki](https://github.com/vimwiki/vimwiki)
 
 
 ## Emulators

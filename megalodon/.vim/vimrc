@@ -3,3 +3,11 @@ set autoindent expandtab shiftwidth=4 smarttab softtabstop=0 tabstop=4
 set nocompatible
 filetype plugin on
 syntax on
+
+" vimwiki settings
+let g:vimwiki_list = [{
+\ "syntax": "markdown",
+\ "ext": "md",
+\ "path": "~/Wiki/"}]
+" NOTE: vimwiki has it's own syntax, but also support markdown & mediawiki
+" -- would be neat to add a mediawiki wiki to the list for VDC stuff
