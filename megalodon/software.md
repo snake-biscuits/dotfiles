@@ -99,6 +99,7 @@
  * radare2
  * renderdoc
  * uxplay (AUR)
+ * yt-dlp
 
 
 ## Music
