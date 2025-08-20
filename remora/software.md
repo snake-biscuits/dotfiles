@@ -2,7 +2,28 @@
 
 ## Distro
 Will depend on hardware limits
-LMDE is pretty nice, tho a little outdated
+
+ * Debian-based
+   - LMDE
+     * pretty nice
+     * a little outdated
+   - TrueNAS Scale
+     * OpenZFS filesystem (resilient)
+     * Storage + Docker + VMs
+     * Web UI
+     * Built to scale over time
+     * Install Nextcloud & Plex from app store
+   - OpenMediaVault
+     * lightweight
+     * Web UI
+
+### dm & wm
+ * dm
+   - nody-greeter / web-greeter
+     * WelcomeXP
+ * wm
+   - Cinnamon
+     * CinnXP
 
 
 ## Cloud
@@ -12,3 +33,8 @@ LMDE is pretty nice, tho a little outdated
    - [ ] `nextcloud-app-notes`
  - [ ] `samba`
  - [ ] `plex`
+
+
+## References
+ * Youtube
+   - [Install Plex on TrueNAS](https://www.youtube.com/watch?v=L8Wn5EPwuYI)
