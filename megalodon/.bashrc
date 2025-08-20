@@ -57,7 +57,11 @@ xterm*|rxvt*)
 	;;
 esac
 
-# add user scripts to PATH
+
+# extend PATH
+# rust binaries
+PATH="${PATH}:/home/bikkie/.cargo/bin"
+# user scripts
 PATH="${PATH}:/home/bikkie/.scripts"
 
 
@@ -94,3 +98,8 @@ export TERM="xterm-256color"
 export EDITOR="/usr/bin/nvim"
 export SUDO_EDITOR="nvim"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+
+# Startup
+# TODO: move to a systemd service
+mpris-notifier &

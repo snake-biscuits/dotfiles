@@ -106,6 +106,7 @@
    - mpc
    - mpd-discord-rpc (AUR)
    - mpd-mpris (control mpd w/ playerctl)
+   - mpris-notifier (Cargo)
    - rmpc
  * mplayer
  * rhythmbox (podcasts)
