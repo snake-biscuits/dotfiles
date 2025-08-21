@@ -1,0 +1,8 @@
+[Unit]
+Description=Notification generator for MPRIS status changes
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/home/bikkie/.cargo/bin/mpris-notifier
+Restart=on-failure
