@@ -1,30 +1,7 @@
 # Software
 
 ## Distro
-Will depend on hardware limits
-
- * Debian-based
-   - LMDE
-     * pretty nice
-     * a little outdated
-   - TrueNAS Scale
-     * OpenZFS filesystem (resilient)
-     * Storage + Docker + VMs
-     * Web UI
-     * Built to scale over time
-     * Install Nextcloud & Plex from app store
-   - OpenMediaVault
-     * lightweight
-     * Web UI
-
-### dm & wm
- * dm
-   - nody-greeter / web-greeter
-     * WelcomeXP
- * wm
-   - Cinnamon
-     * CinnXP
-
+TrueNAS
 
 ## Cloud
  - [ ] `nextcloud`
@@ -33,6 +10,7 @@ Will depend on hardware limits
    - [ ] `nextcloud-app-notes`
  - [ ] `samba`
  - [ ] `plex`
+ - [ ] `copyparty` (samba substitute?)
 
 
 ## References
