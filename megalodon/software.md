@@ -130,6 +130,7 @@
 ## Paint
  * grafx2
  * krita
+ * mypaint
 
 
 ## Terminal
