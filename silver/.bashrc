@@ -106,4 +106,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# add cargo to environment
 . "$HOME/.cargo/env"
+
+# add user scripts to PATH
+export PATH="$HOME/.scripts:$PATH"
