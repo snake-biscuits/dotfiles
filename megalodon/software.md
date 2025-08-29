@@ -169,6 +169,8 @@
 
 ## Video
  * kodi
+ * mpv
+ * python-mpv
  * vlc
 
 
