@@ -9,8 +9,9 @@ TrueNAS
      Available on Linux & iPhone
    - [ ] `nextcloud-app-notes`
  - [ ] `samba`
- - [ ] `plex`
+ - [ ] `plex` / `jellyfin`
  - [ ] `copyparty` (samba substitute?)
+ - [ ] `sonarr`
 
 
 ## References
