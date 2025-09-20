@@ -57,6 +57,7 @@
 
 ## Emulators
  * flycast (AUR)
+ * jgenesis
  * mgba-sdl
 
 
