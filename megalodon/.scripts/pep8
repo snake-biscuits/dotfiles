@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+pep8() {
+    echo "Syntax Errors:"
+    flake8 $1 --exclude=".env" --select=E9,F63,F7,F82 --show-source --ignore=F824
+    echo "Complexity & Line Length:"
+    # TODO: options / env args to set limits
+    flake8 $1 --exclude=".env" --exit-zero --max-complexity=10 --max-line-length=127
+}
+
+if [ -z "$1" ]; then
+    pep8 $PWD;
+else
+    pep8 $1;
+fi
