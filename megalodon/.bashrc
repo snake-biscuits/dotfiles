@@ -92,6 +92,9 @@ alias yay='yay --color=always'
 # xxd
 alias xxd='xxd -R always'
 
+# vimwiki
+alias vimwiki='vim -c "VimwikiIndex"'
+
 
 # Exports
 export TERM="xterm-256color"
