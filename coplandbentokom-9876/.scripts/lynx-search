@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Opens a lynx session directly into a DuckDuckGo search
+
+# TODO: search engine selection
+url="https://lite.duckduckgo.com/lite/?q="
+
+# TODO: no leading "+"
+for term in "$@"
+do
+    url=$url"+"$term
+done
+
+# NOTE: no config settings, just the straight url
+lynx $url
