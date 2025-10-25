@@ -94,6 +94,7 @@
 ## Misc
  * anki
  * blender
+ * calibre
  * fd
  * font-manager
  * jq
