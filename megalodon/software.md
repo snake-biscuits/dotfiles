@@ -11,11 +11,8 @@
  * djv (AUR)
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
- * ~~lightdm~~ (doesn't work well with sway; gdm is recommended)
- * gdm
- * niri
-   - fuzzel
-   - xdg-desktop-portal-gnome (for screencasting; will wlr work?)
+ * gdm [greeter / display manager]
+ * xdg-desktop-portal-gnome (for niri screencasting; will wlr work?)
  * nvim plugins (need to find)
    - markdown inline rendering
    - markdown navigation (jump to header)
@@ -39,6 +36,8 @@
    - waybar
    - wofi
    - xwayland-sattelite
+ * niri
+   - fuzzel
 
 
 ## Editors
@@ -66,6 +65,7 @@
 
 
 ## File Manager
+ * dolphin
  * ifuse (for iPhone files; built with libimobiledevice)
  * nautilus
  * p7zip-gui (for archives)
