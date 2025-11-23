@@ -132,9 +132,14 @@ layout {
     }
 }
 
-// TODO: use systemd instead
-spawn-at-startup "waybar"
-spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/bikkie/Images/wallpapers/windows-xp-bliss-4k-lu-1920x1080.jpg"
+// TODO: use systemd instead of `spawn-at-startup`
+// Waybar & SwayBG
+// spawn-at-startup "waybar"
+// spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/bikkie/Images/wallpapers/windows-xp-bliss-4k-lu-1920x1080.jpg"
+
+// Exo shell
+spawn-at-startup "ignis" "init"
+spawn-at-startup "swww-daemon"
 
 hotkey-overlay {
     skip-at-startup
@@ -215,9 +220,16 @@ binds {
     // help menu
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    // TODO: ignis binds
+    // -- `ignis open-window Settings`
+    // -- `ignis open-window PowerMenu`
+    // -- `ignis run-command recorder-record-{screen,region,portal}`
+
     // program binds
     Mod+Return  hotkey-overlay-title="Open a Terminal: wezterm"    { spawn "wezterm"; }
-    Mod+D       hotkey-overlay-title="Run an Application: fuzzel"  { spawn "fuzzel";  }
+    Mod+D       hotkey-overlay-title="Application Launcher: ignis" {
+        spawn "ignis" "open-window" "Launcher"
+    }
     Mod+B       hotkey-overlay-title="Web Browser: firefox"        { spawn "firefox"; }
     Mod+E       hotkey-overlay-title="File Browser: dolphin"       { spawn "dolphin"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
@@ -231,6 +243,9 @@ binds {
     XF86AudioPrev allow-when-locked=true { spawn-sh "mpc prev"; }
     XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    // TODO: ignis screen recording binds
+    // -- requires `gpu-screen-recorder`?
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -331,7 +346,7 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
-    Mod+R { switch-preset-column-width; }
+    Mod+R       { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-column-width-back; }
     Mod+Ctrl+R  { reset-window-height; }
     // NOTE: not cycling heigh presets

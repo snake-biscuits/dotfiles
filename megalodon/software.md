@@ -12,6 +12,7 @@
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
  * xdg-desktop-portal-gnome (for niri screencasting; will wlr work?)
+ * gpu-screen-recorder (shadowplay-like screen recorder; for exo)
  * nvim plugins (need to find)
    - markdown inline rendering
    - markdown navigation (jump to header)
@@ -30,16 +31,26 @@
 
 
 ## Desktop Environment
- * lightdm
-   - lightdm-settings
-   - lightdm-slick-greeter
- * niri
-   - fuzzel
  * sway
    - mako
    - waybar
    - wofi
    - xwayland-sattelite
+
+### niri
+ * fuzzel
+ * lightdm
+   - lightdm-settings (broken?)
+   - lightdm-slick-greeter
+ * [Exo](https://github.com/debuggyo/Exo) (shell)
+   - adw-gtk-theme
+   - dart-sass
+   - gnome-bluetooth-3.0
+   - ignis-gvc (AUR)
+   - matugen-bin (AUR)
+   - python-ignis-git (AUR)
+   - swww (moved to: awww-git (AUR))
+   - ttf-material-symbols-variable-git (AUR)
 
 
 ## Editors
