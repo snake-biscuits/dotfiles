@@ -11,7 +11,6 @@
  * djv (AUR)
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
- * gdm [greeter / display manager]
  * xdg-desktop-portal-gnome (for niri screencasting; will wlr work?)
  * nvim plugins (need to find)
    - markdown inline rendering
@@ -31,13 +30,16 @@
 
 
 ## Desktop Environment
+ * lightdm
+   - lightdm-settings
+   - lightdm-slick-greeter
+ * niri
+   - fuzzel
  * sway
    - mako
    - waybar
    - wofi
    - xwayland-sattelite
- * niri
-   - fuzzel
 
 
 ## Editors
