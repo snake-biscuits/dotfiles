@@ -11,7 +11,6 @@
  * djv (AUR)
  * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
- * xdg-desktop-portal-gnome (for niri screencasting; will wlr work?)
  * gpu-screen-recorder (shadowplay-like screen recorder; for exo)
  * nvim plugins (need to find)
    - markdown inline rendering
@@ -42,6 +41,7 @@
  * lightdm
    - lightdm-settings (broken?)
    - lightdm-slick-greeter
+   - xf86-video-amdgpu (Xorg graphics drivers)
  * [Exo](https://github.com/debuggyo/Exo) (shell)
    - adw-gtk-theme
    - dart-sass
@@ -51,6 +51,7 @@
    - python-ignis-git (AUR)
    - swww (moved to: awww-git (AUR))
    - ttf-material-symbols-variable-git (AUR)
+ * xdg-desktop-portal-gnome
 
 
 ## Editors
@@ -79,6 +80,7 @@
 
 ## File Manager
  * dolphin
+   - xdg-desktop-portal-kde
  * ifuse (for iPhone files; built with libimobiledevice)
  * nautilus
  * p7zip-gui (for archives)
