@@ -80,6 +80,7 @@
 
 ## File Manager
  * dolphin
+   - konsole
    - xdg-desktop-portal-kde
  * ifuse (for iPhone files; built with libimobiledevice)
  * nautilus
