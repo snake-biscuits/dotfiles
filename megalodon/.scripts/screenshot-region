@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# grim + slup to screenshot a region
+# swappy to edit and save to screencaps folder
+grim -g "$(slurp)" - | swappy -f -
