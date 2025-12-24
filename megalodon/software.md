@@ -24,9 +24,10 @@
 
 
 ## Audio
+ * alsamixer
+ * gerbera
  * pulseaudio
    - pavucontrol (graphical mixer)
- * alsamixer
 
 
 ## Desktop Environment
