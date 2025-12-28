@@ -167,7 +167,7 @@
 
 
 ## Utilities
- * bashtop
+ * btop
  * cpupower
  * endlines (AUR)
  * justdd (AUR) [balena breaks on wayland; needs graphical polkit?]
