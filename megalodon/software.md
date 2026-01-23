@@ -188,6 +188,7 @@
 
 
 ## Video
+ * binkplayer-bin (AUR)
  * kodi
  * mpv
  * python-mpv
