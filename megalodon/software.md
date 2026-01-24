@@ -42,6 +42,7 @@
    - fuzzel
    - xdg-desktop-portal-gnome
    - noctalia-shell (AUR)
+   - evolution-data-server
  * sway
    - mako
    - waybar
