@@ -9,9 +9,8 @@
  * kimageformats [`*.heic` thumbnails]
    - [Arch Wiki](https://wiki.archlinux.org/title/Dolphin#File_previews)
  * djv (AUR)
- * mpv [highly customisable video player that can create anki flashcards]
  * bc [calculator]
- * gpu-screen-recorder (shadowplay-like screen recorder; for exo)
+ * gpu-screen-recorder (shadowplay-like screen recorder)
  * nvim plugins (need to find)
    - markdown inline rendering
    - markdown navigation (jump to header)
@@ -31,28 +30,28 @@
 
 
 ## Desktop Environment
+ * adw-gtk-theme
+ * dart-sass
+ * gnome-bluetooth-3.0
+ * matugen-bin (AUR)
+ * niri
+   - fuzzel
+   - xdg-desktop-portal-gnome
+   - noctalia-shell (AUR)
  * sway
    - mako
    - waybar
    - wofi
    - xwayland-sattelite
+ * swww (moved to: awww-git (AUR))
+ * ttf-material-symbols-variable-git (AUR)
 
-### niri
- * fuzzel
+
+## Display Manager
  * lightdm
    - lightdm-settings (broken?)
    - lightdm-slick-greeter
    - xf86-video-amdgpu (Xorg graphics drivers)
- * [Exo](https://github.com/debuggyo/Exo) (shell)
-   - adw-gtk-theme
-   - dart-sass
-   - gnome-bluetooth-3.0
-   - ignis-gvc (AUR)
-   - matugen-bin (AUR)
-   - python-ignis-git (AUR)
-   - swww (moved to: awww-git (AUR))
-   - ttf-material-symbols-variable-git (AUR)
- * xdg-desktop-portal-gnome
 
 
 ## Editors
