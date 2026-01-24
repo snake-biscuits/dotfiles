@@ -25,8 +25,12 @@
 ## Audio
  * alsamixer
  * gerbera
- * pulseaudio
-   - pavucontrol (graphical mixer)
+ * pipewire
+   - pipewire-alsa
+   - pipewire-jack
+   - pipewire-pulse
+   - pwvucontrol (AUR)
+   - wireplumber
 
 
 ## Desktop Environment
