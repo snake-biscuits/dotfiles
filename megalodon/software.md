@@ -126,6 +126,7 @@
 
 
 ## Music
+ * id3v2
  * mpd
    - mpc
    - mpd-mpris (control mpd w/ playerctl)
