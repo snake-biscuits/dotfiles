@@ -10,7 +10,6 @@
    - [Arch Wiki](https://wiki.archlinux.org/title/Dolphin#File_previews)
  * djv (AUR)
  * bc [calculator]
- * gpu-screen-recorder (shadowplay-like screen recorder)
  * nvim plugins (need to find)
    - markdown inline rendering
    - markdown navigation (jump to header)
@@ -118,6 +117,7 @@
  * calibre
  * fd
  * font-manager
+ * gpu-screen-recorder-git (AUR)
  * jq
  * radare2
  * renderdoc
