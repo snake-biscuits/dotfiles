@@ -143,6 +143,7 @@
 
 ## Package Managers
  * flatpak
+ * paru
  * yay
 
 ### Flatpaks
