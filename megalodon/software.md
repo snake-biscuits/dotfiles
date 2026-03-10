@@ -98,6 +98,8 @@
 
 
 ## Games
+ * gamescope
+
 ### Minecraft
  * prismlauncher
 
