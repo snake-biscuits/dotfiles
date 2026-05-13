@@ -38,7 +38,7 @@
       "nix-setup-systemd",  // nix package manager
       "noctalia-shell",
       "python3-pip",
-      "python3-virtualenv",  // superset of venv
+      "python3-venv",
       "qbittorrent",
       "ripgrep",
       "torbrowser-launcher",
