@@ -1,0 +1,61 @@
+{
+  // NOTE: sticking with kitty, rather than wezterm
+  // -- got over most of my config hurdles
+  // -- could use some more tweaks, but it's quite nice now
+  // -- noctalia-shell theme's dark-grey is too dark
+  "pikman": {
+    // TODO: DEV: jq, python3 -> python, nerd fonts, radare2
+    // -- jq was installed automatically
+    // -- nix / nix-shell can provide python
+    // -- radare2 is available via pikman
+    // -- gcc / g++ came with python3-pip
+    // -- manage python versions with pyenv? (maintained by Debian Python Team)
+    // TODO: SCREENSHOT: grim (grimshot), swappy, slurp
+    // -- niri does have a decent region screenshotter, actually
+    // -- gradia is an interesting looking screenshot annotator
+    // TODO: ENV: zsh, fzf
+    // TODO: MUSIC: mpd, mpc, mpd-mpris (mpdris2?), rmpc (no pikman version)
+    // -- can get them all w/ nix
+    // TODO: VIDEO: mpv (+mpv_mpris?), qbittorrent, yt-dlp
+    // -- mpv was installed automatically (for pika-niri-desktop)
+    // TODO: 3D: blender, usdview
+    // -- need blender for io_import_rbsp development
+    // TODO: tacentview
+    // NOTE: installed vimwiki to neovim via lazy
+    "install": [
+      "bat",
+      "btop",  // system monitor
+      "eza",  // ls & tree replacement
+      "firefox",  // v148 (Jan 2026), nix-25.11 has v150 (April 2026)
+      "fonts-firacode",  // nerd font
+      "fonts-lmodern",  // firefox optional dep
+      "fonts-stix",  // firefox optional dep
+      "glow",  // markdown pager
+      "info",  // didn't come with system
+      "lazygit",
+      "luarocks",  // for lazy.nvim
+      "neovim",  // replaces vim?
+      "nix-setup-systemd",  // nix package manager
+      "noctalia-shell",
+      "python3-pip",
+      "python3-virtualenv",  // superset of venv
+      "qbittorrent",
+      "ripgrep",
+      "torbrowser-launcher",
+      "xxd"],  // didn't come with vim
+    "remove": [
+      "chromium"]  // default browser is chrome, nasty
+  },
+  // TODO: mpc, mpd, mpdris2  (pikman)
+  // -- rmpc is available via nix, will album art work?
+  "home-manager": [  // nix home-manager (wraps graphical programs w/ nixGL)
+    "vesktop"
+  ],
+  "configs": [  // copied from backup & merged to fit new system
+    ".bashrc",  // merged by hand
+    ".profile",  // tweaked to work with nix
+    "kitty",  // read the docs + noctalia theme template
+    "niri",  // merged by hand
+    "neovim",  // copied & added bugfixes / notes
+    "noctalia"]  // didn't save settings.json on Arch, built a new one
+}
