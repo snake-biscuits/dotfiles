@@ -1,53 +1,51 @@
 {
-  // NOTE: sticking with kitty, rather than wezterm
-  // -- got over most of my config hurdles
-  // -- could use some more tweaks, but it's quite nice now
-  // -- noctalia-shell theme's dark-grey is too dark
   "pikman": {
-    // TODO: DEV: jq, python3 -> python, nerd fonts, radare2
-    // -- jq was installed automatically
-    // -- nix / nix-shell can provide python
-    // -- radare2 is available via pikman
-    // -- gcc / g++ came with python3-pip
-    // -- manage python versions with pyenv? (maintained by Debian Python Team)
-    // TODO: SCREENSHOT: grim (grimshot), swappy, slurp
-    // -- niri does have a decent region screenshotter, actually
-    // -- gradia is an interesting looking screenshot annotator
     // TODO: ENV: zsh, fzf
-    // TODO: MUSIC: mpd, mpc, mpd-mpris (mpdris2?), rmpc (no pikman version)
-    // -- can get them all w/ nix
-    // TODO: VIDEO: mpv (+mpv_mpris?), qbittorrent, yt-dlp
+    // TODO: VIDEO: yt-dlp, mpv-mpris?
     // -- mpv was installed automatically (for pika-niri-desktop)
-    // TODO: 3D: blender, usdview
-    // -- need blender for io_import_rbsp development
-    // TODO: tacentview
+    // TODO: 3D: usdview
+    // TODO: 2D: tacentview
     // NOTE: installed vimwiki to neovim via lazy
     "install": [
       "bat",
+      "blender",
       "btop",  // system monitor
+      "cmake",
       "eza",  // ls & tree replacement
       "firefox",  // v148 (Jan 2026), nix-25.11 has v150 (April 2026)
       "fonts-firacode",  // nerd font
       "fonts-lmodern",  // firefox optional dep
       "fonts-stix",  // firefox optional dep
+      "gdb",
       "glow",  // markdown pager
       "info",  // didn't come with system
       "lazygit",
+      "libglib2.0-dev",
+      "libjpeg-dev",
+      "libpng-dev",
+      "libxml2-dev",
       "luarocks",  // for lazy.nvim
+      "mesa-common-dev",
       "neovim",  // replaces vim?
       "nix-setup-systemd",  // nix package manager
       "noctalia-shell",
       "python3-pip",
       "python3-venv",
       "qbittorrent",
+      "qtbase5-dev",
       "ripgrep",
       "torbrowser-launcher",
+      "valgrind",
+      "sqlite3",
+      "sqlite3-doc",
       "xxd"],  // didn't come with vim
     "remove": [
       "chromium"]  // default browser is chrome, nasty
   },
   // TODO: mpc, mpd, mpdris2  (pikman)
   // -- rmpc is available via nix, will album art work?
+  // to update: `nix-channel --update; home-manager switch`
+  // TODO: rizin
   "home-manager": [  // nix home-manager (wraps graphical programs w/ nixGL)
     "vesktop"
   ],

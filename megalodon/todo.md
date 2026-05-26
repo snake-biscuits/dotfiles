@@ -38,9 +38,9 @@ $ rm ~/fstab.bak  # success!
  * `Code/Repos/`
    - ~~copy from backup~~
    - ~~`git clean -fdx` (`--dry-run` first)~~
-   - migrate to Codeberg
-   - look at SourceHut
-   - new `dotfiles/` entry for new `megalodon/` (keep `megalodon.arch/`)
+   - migrate to Codeberg (made an account)
+   - look at SourceHut (paid subscription to host)
+   - ~~new `dotfiles/` entry for new `megalodon/` (keep `megalodon.arch/`)~~
  * ~~log in to firefox~~
  * music
    - mpd, mpc & rmpc
@@ -48,7 +48,8 @@ $ rm ~/fstab.bak  # success!
  * ~~video~~
    - ~~qbittorent, tor, mpv~~
  * vimwiki
-   - neovim? (need to switch to regular markdown controls)
+   - ~~neovim via lazy.nvim~~
+   - bind to disable inline markdown rendering
  * ~~neovim~~
    - ~~test clipboard (`"+y`, `Ctrl+Shift+C` etc.)~~  (no changes required)
  * btrfs
@@ -56,9 +57,11 @@ $ rm ~/fstab.bak  # success!
    - snapshots (automated with system updates, boot snapshot)
    - gui?
    - good quality guides
- * dev environment(s) (nix-shell?)
+ * dev environment
+   - ~~valgrind, gdb, gcc, make, cmake~~
+ * nix-shell
    - manage w/ nix flakes (stable GCC target & dependencies)
-   - valgrind, gdb, gcc, make, cmake, python (uv?)
+   - python (uv?)
  * ~~copy backups~~
    - ~~learn rsync & take notes~~
    - ~~ssd1, ssd2 & nvme~~
@@ -69,11 +72,15 @@ $ rm ~/fstab.bak  # success!
    - `silver` todo list (markdown file on desktop)
  * try zsh
  * check pikman for optional manpages we don't have
+   - where are the coreutils docs???
  * does the blu-ray player work now? can we get dvd playback?
- * vimwiki
+ * ~~vimwiki~~
+   - ~~installed to neovim w/ lazy~~
  * ~~configure hypridle~~ (commented out of niri config)
  * harden `/etc/ssh/sshd_config`
    - disable text passwords
+ * allow ssh access over mDNS
+   - add ssh service to avahi?
 
 > NOTE: mDNS is provided by `avahi-daemon`, not `systemd-resolved`
 
