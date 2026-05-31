@@ -6,6 +6,7 @@
     // TODO: 3D: usdview
     // TODO: 2D: tacentview
     // NOTE: installed vimwiki to neovim via lazy
+    // TODO: WEB: waterfox
     "install": [
       "bat",
       "blender",
@@ -33,6 +34,7 @@
       "python3-venv",
       "qbittorrent",
       "qtbase5-dev",
+      "ranger",  // vi binds tui file manager
       "ripgrep",
       "torbrowser-launcher",
       "valgrind",
