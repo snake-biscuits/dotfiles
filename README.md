@@ -2,6 +2,8 @@
 
 dotfiles backup + notes
 
+> [!NOTE]
+> This repo has migrated to [Codeberg](https://codeberg.org/bikkie/dotfiles) but will remain archived on GitHub
 
 ## References
 
